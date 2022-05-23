@@ -1,9 +1,79 @@
 /* RESET */
-img{
-  max-width: 100%;
-  height: auto;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ms_banner_img img{
+  width: 100%;
+  display: block;
+
+}
+
+.ms_reviews_circle ul{
+  list-style-type: none;
+}
+
+.ms_reviews_circle a{
+  text-decoration: none;
+  color: inherit;
 }
 
 /* GENERAL */
+/* cards */
+.ms_card{
+  max-width: 1892px;
+  margin: 0 auto;
+}
+/* Section Padding */
+.ms_section_padding{
+  padding: 1rem 1.6rem 0.2rem;
+}
+
+.ms_padding_updown{
+  padding: 1rem 0 ;
+}
+
+.ms_text_dotted{
+  border-bottom: 2px dotted lightgrey;
+}
+
+/* Displays */
+.ms_display_inblock{
+  display: inline-block;
+}
+
+.ms_display_none{
+  display: none;
+}
 
 /* MAIN */
+/* Title */
+.ms_title_section h2{
+  font-weight: 600;
+}
+
+/* Reviews circle */
+.ms_reviews_circle *{
+  vertical-align: middle;
+}
+.ms_circle{
+  height: 25px;
+  width: 25px;
+  background-color: #05aa6c;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.ms_reviews_circle{
+  font-size: 1.4rem;
+}
+
+/* Servicies List */
+.ms_servicies_list i{
+  width: 24px;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+/* ICON FONTAWSOME */
