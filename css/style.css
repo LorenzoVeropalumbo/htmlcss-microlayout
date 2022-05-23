@@ -7,14 +7,15 @@
 .ms_banner_img img{
   width: 100%;
   display: block;
+  object-fit: cover;
 
 }
 
-.ms_reviews_circle ul{
+.ms_card ul{
   list-style-type: none;
 }
 
-.ms_reviews_circle a{
+.ms_card a{
   text-decoration: none;
   color: inherit;
 }
@@ -24,7 +25,10 @@
 .ms_card{
   max-width: 1892px;
   margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
 }
+
 /* Section Padding */
 .ms_section_padding{
   padding: 1rem 1.6rem 0.2rem;
@@ -47,10 +51,26 @@
   display: none;
 }
 
+.ms_display_flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Buttons */
+.ms_button{
+  background-color: orange;
+  padding: 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
 /* MAIN */
 /* Title */
 .ms_title_section h2{
   font-weight: 600;
+  padding-bottom: 1rem;
+  font-size: 1.7rem;
 }
 
 /* Reviews circle */
@@ -65,15 +85,48 @@
   display: inline-block;
 }
 
-.ms_reviews_circle{
-  font-size: 1.4rem;
-}
-
 /* Servicies List */
-.ms_servicies_list i{
-  width: 24px;
+.ms_card i{
+  width: 20px;
   font-size: 1.5rem;
-  margin-right: 1rem;
+  margin-right: 0.6rem;
 }
 
-/* ICON FONTAWSOME */
+/* Pricies Section */
+.ms_pricies_section .ms_discount{
+  color: red;
+  text-decoration: line-through;
+  display: block;
+}
+
+.ms_pricies_section .ms_price{
+  font-weight: 600;
+  font-size: 2.2rem;
+  display: block;
+}
+
+.ms_pricies_info .ms_text_big{
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.ms_pricies_info .ms_text_small{
+  display: block;
+  font-weight: 500;
+  padding-top: 0.4rem;
+}
+
+/* End Section */
+.ms_end_section{
+  text-align: center;
+}
+
+.ms_end_section hr{
+  padding: 0;
+  color: #f1f1f1;
+  margin-bottom: 1rem;
+}
+
+.ms_end_section span{
+  padding: 1rem;
+}
