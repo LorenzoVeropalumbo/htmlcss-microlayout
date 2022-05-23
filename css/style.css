@@ -64,6 +64,10 @@
   justify-content: space-between;
 }
 
+.ms_company_img{
+  display: none;
+}
+
 /* Buttons */
 .ms_button{
   background-color: orange;
@@ -132,14 +136,144 @@
 }
 
 /* MEDIA QUERY */
-@media screen and (max-width:375px) {
+@media screen and (max-width:374px) {
+  /* Button Size */
   .ms_button{
     display: none;
   }
 }
 
 @media screen and (min-width:768px) {
+  /* Button Size */
   .ms_button{
     padding: 1.3rem;
   }
+}
+
+@media screen and (min-width:1440px) {
+  /* Changing display */
+  .ms_card{
+    display: flex;
+  }
+  
+  .ms_end_section{
+    display: none;
+  }
+
+  .ms_section_padding{
+    display: flex;
+    width: 65%;
+    flex-wrap: wrap;
+  }
+
+  .ms_display_flex{
+    flex-wrap: wrap;
+  }
+
+  .ms_servicies_list .ms_display_none{
+    display: block;
+  }
+
+  .ms_pricies_section .ms_display_inblock{
+    display: none;
+  }
+
+  .ms_company_img{
+    display: block;
+  }
+
+  /* Resizing img */
+  .ms_banner_img{
+    width: 35%;
+  }
+  .ms_banner_img img{
+    height: 100%;
+    display: block;
+  }
+  
+  .ms_company_img img{
+    width: 155px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  /* Column size */
+  .ms_title_section{
+    width: 100%;
+  }
+
+  .ms_reviews_circle{
+    width: 40%;
+    order: 3;
+    padding: 0 1rem;
+  }
+
+  .ms_pricies_section{
+    width: 35%;
+    order: 1;
+  }
+
+  .ms_cols{
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  /* Text modify */
+  .ms_title_section h2{
+    font-size: 2.3rem;
+  }
+
+  .ms_pricies_section .ms_discount{
+    font-size: 2.5rem;
+  }
+  
+  .ms_pricies_section .ms_price{
+    font-size: 2.5rem;
+  }
+
+  .ms_pricies_info .ms_text_big{
+    font-size: 1.6rem;
+  } 
+  
+  .ms_button{
+    padding: 20px 20%;
+  } 
+
+  .ms_other_offerts{
+    width: 25%;
+    order: 2;
+    border-left: 2px dotted grey;
+    border-right: 2px dotted grey;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .ms_other_offerts li{
+    font-size: 1.4rem;
+    padding: 1rem 0;
+  }
+
+  .ms_other_offerts li:last-child{
+    border-bottom: 2px dotted grey;
+  }
+
+  .ms_other_offerts p{
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-top: 1rem;
+  }
+}
+
+/* Colore */
+.color-red-text{
+  color: red;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.weight-text{
+  font-size: 1.6rem;
+  font-weight: 700;
 }
