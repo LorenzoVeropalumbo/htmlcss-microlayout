@@ -88,6 +88,7 @@
 /* Servicies List */
 .ms_card i{
   width: 20px;
+  height: 20px;
   font-size: 1.5rem;
   margin-right: 0.6rem;
 }
